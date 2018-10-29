@@ -1,4 +1,5 @@
-@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+* ASCII text, with CRLF line terminators
+
 /*basic reset*/
 * {margin: 0; padding: 0;}
 
@@ -17,9 +18,9 @@ body {
 /*form styles*/
 #msform {
 	width: 800px;
-	margin: 80px auto;
+	margin: 50px auto;
 	text-align: center;
-	position: fixed;
+	position: relative;
 }
 #msform fieldset {
 	background: white;
@@ -43,7 +44,7 @@ body {
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	margin-top: 10px;
+	margin-bottom: 10px;
 	width: 100%;
 	box-sizing: border-box;
 	font-family: inherit;
