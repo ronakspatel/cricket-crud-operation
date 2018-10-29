@@ -1,0 +1,47 @@
+<div>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm.value)" id="msform">
+
+    <!-- progressbar -->
+
+    <!-- fieldsets -->
+    <fieldset>
+
+      <h2 class="fs-title">Reactive Forms</h2>
+      <div>
+
+        <input type="text" placeholder="playerName" formControlName="playerName" required />
+      </div>
+
+
+      <div>
+
+        <input type="text" placeholder="nickName" formControlName="nickName" required />
+      </div>
+      <div>
+
+        <input type="date" placeholder="birthday" formControlName="birthday" required />
+      </div>
+      <div>
+
+        <input type="text" placeholder="nationality" formControlName="nationality" required />
+      </div>
+      <div>
+
+        <input type="number" placeholder="Age" formControlName="Age" required />
+      </div>
+      <div>
+
+        <input type="text" placeholder="fatherName" formControlName="fatherName" required />
+      </div>
+      <div>
+
+        <input type="text" placeholder="motherName" formControlName="motherName" required />
+      </div>
+      <input type="submit" [disabled]="!profileForm.valid" class="btn btn-success" />
+
+      
+    </fieldset>
+  </form>
+
+
+</div>

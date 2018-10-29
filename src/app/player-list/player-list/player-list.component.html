@@ -1,0 +1,24 @@
+<h1>Player List</h1>
+<table>
+  <tr>
+    <th>Player Id</th>
+    <th>Player Name</th>
+    <th>Nick Name</th>
+    <th>Birthday</th>
+    <th>Nationality</th>
+    <th>Age</th>
+    <th>Father Name</th>
+    <th>Mother Name</th>
+  </tr>
+  <tr *ngFor="let player of playersdata">
+    <td>{{player.playerId}}</td>
+    <td>{{player.playerName}}</td>
+    <td>{{player.nickName}}</td>
+    <td>{{player.birthday}}</td>
+    <td>{{player.nationality}}</td>
+    <td>{{player.Age}}</td>
+    <td>{{player.fatherName}}</td>
+    <td>{{player.motherName}}</td>
+  </tr>
+
+</table>
