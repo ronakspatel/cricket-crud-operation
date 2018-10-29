@@ -5,7 +5,7 @@ export class InMemoryDataService implements InMemoryDbService {
     createDb() {
         const playerData: CricketPlayerModel[] = [
             {
-                playerId:1,
+                Id:1,
                 playerName: 'Sachin  Tendulkar',
                 nickName: ' Master Blaster',
                 birthday: '24/04/1973',
@@ -19,6 +19,6 @@ export class InMemoryDataService implements InMemoryDbService {
         return { playerData };
     }
     genId(playerData: CricketPlayerModel[]): number {
-        return playerData.length > 0 ? Math.max(...playerData.map(playerData => playerData.playerId)) + 1 : 1;
+        return playerData.length > 0 ? Math.max(...playerData.map(playerData => playerData.Id)) + 1 : 1;
       }
 }

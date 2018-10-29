@@ -1,5 +1,5 @@
 export class CricketPlayerModel {
-    playerId:number;
+    Id:number;
     playerName:string;
     nickName: string;
     birthday: string;

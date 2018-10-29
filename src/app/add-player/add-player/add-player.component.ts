@@ -16,6 +16,7 @@ export class AddPlayerComponent implements OnInit {
     this.submitted=false;
    }
   profileForm = this.fb.group({
+    Id: ['', Validators.required],
     playerName: ['', Validators.required],
     nickName: ['',Validators.required],
     birthday: ['',Validators.required],

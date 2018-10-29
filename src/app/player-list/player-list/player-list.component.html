@@ -9,9 +9,10 @@
     <th>Age</th>
     <th>Father Name</th>
     <th>Mother Name</th>
+    <th>Action</th>
   </tr>
   <tr *ngFor="let player of playersdata">
-    <td>{{player.playerId}}</td>
+    <td>{{player.Id}}</td>
     <td>{{player.playerName}}</td>
     <td>{{player.nickName}}</td>
     <td>{{player.birthday}}</td>
@@ -19,6 +20,8 @@
     <td>{{player.Age}}</td>
     <td>{{player.fatherName}}</td>
     <td>{{player.motherName}}</td>
+    <td><a href="">Edit</a></td>
+    <td><a href="">Delete</a></td>
   </tr>
 
 </table>
