@@ -9,16 +9,19 @@
     <th>Age</th>
     <th>Father Name</th>
     <th>Mother Name</th>
+    <TH colspan="2">ACTION</TH>
   </tr>
-  <tr *ngFor="let player of playersdata">
-    <td>{{player.playerId}}</td>
-    <td>{{player.playerName}}</td>
-    <td>{{player.nickName}}</td>
+  <tr *ngFor="let player of playersdata; ">
+    <td>{{player.Id}}</td>
+    <td>{{player.playerName |uppercase}}</td>
+    <td>{{player.nickName |uppercase}}</td>
     <td>{{player.birthday}}</td>
-    <td>{{player.nationality}}</td>
+    <td>{{player.nationality |uppercase}}</td>
     <td>{{player.Age}}</td>
-    <td>{{player.fatherName}}</td>
-    <td>{{player.motherName}}</td>
+    <td>{{player.fatherName |uppercase}}</td>
+    <td>{{player.motherName |uppercase}}</td>
+    <td><button (click)="editPlayer(player)">Edit</button></td>
+    <td><button (click)="deletePlayer(player)">Delete</button></td>
   </tr>
 
 </table>

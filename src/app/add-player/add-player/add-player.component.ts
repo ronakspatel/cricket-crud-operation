@@ -9,38 +9,46 @@ import { PlayerService } from '../../core/Player.service';
   styleUrls: ['./add-player.component.css']
 })
 export class AddPlayerComponent implements OnInit {
-  public playersdata:CricketPlayerModel[];
-  public submitted:boolean;
-
+  //create array type model to store some data
+  public playersdata: CricketPlayerModel[];
+  //submit type boolean
+  public submitted: boolean;
+  //inject playerservice and formBilder
   constructor(private playerService: PlayerService, private fb: FormBuilder) {
-    this.submitted=false;
-   }
+    //submit function by default false
+    this.submitted = false;
+  }
+  //create formcontrol and apply some validation
   profileForm = this.fb.group({
+    Id: [''],
     playerName: ['', Validators.required],
-    nickName: ['',Validators.required],
-    birthday: ['',Validators.required],
-    nationality: ['',Validators.required],
-    Age: ['',Validators.required],
-    fatherName: ['',Validators.required],
-    motherName: ['',Validators.required],
+    nickName: ['', Validators.required],
+    birthday: ['', Validators.required],
+    nationality: ['', Validators.required],
+    Age: ['', Validators.required],
+    fatherName: ['', Validators.required],
+    motherName: ['', Validators.required],
   });
   ngOnInit() {
+    //call getPlayer method
     this.getPlayers();
   }
+  //call getplayer method in over service and subscribe in playersdata array 
   getPlayers(): void {
-    this.playerService.getPlayers()    
-    .subscribe(players => this.playersdata = players);
+    this.playerService.getPlayers()
+      .subscribe(players => this.playersdata = players);
   }
+  //pass data from form to service using postPlayerdata function in service method call
   onSubmit(formdata) {
     this.submitted = true;
     console.log(formdata);
-    
-    this.playerService.addPlayerData(formdata)
+
+    this.playerService.postPlayerData(formdata)
       .subscribe(player => {
         this.playersdata.push(player);
       });
-    
+
   }
-  
+
 
 }

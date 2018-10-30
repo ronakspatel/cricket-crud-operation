@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+//routing apply for home,app-player,player-list
 const routes: Routes = [
   {
     path:'',

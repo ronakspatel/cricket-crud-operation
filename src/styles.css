@@ -1,3 +1,4 @@
+
 .headerleft{
     float: left;
     color: #c2f1df;
@@ -25,7 +26,7 @@ top: 60px;
 height: 90%;
 overflow: hidden;
 background: rgb(236, 231, 231);
-width: 120px;
+width: 150px;
 border-right: 4px solid rgb(241, 236, 236);
 }
 .foot {
@@ -46,9 +47,9 @@ z-index: 1000;
 .side{
 margin-top: 60px;
 position: absolute;
-left: 150px;
+left: 200px;
 
-width: 85 %;
+width: 85%;
 height: 50%;
 
 }
@@ -91,4 +92,19 @@ color: black;
 .topnav a.active {
 background-color: #4CAF50;
 color: white;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
