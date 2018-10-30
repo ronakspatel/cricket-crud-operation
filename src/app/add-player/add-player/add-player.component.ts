@@ -20,11 +20,7 @@ export class AddPlayerComponent implements OnInit {
   }
   //create formcontrol and apply some validation
   profileForm = this.fb.group({
-<<<<<<< HEAD
     Id: [''],
-=======
-    Id: ['', Validators.required],
->>>>>>> 93a64e60c9bd56c7e3d0022e3207afc454714d83
     playerName: ['', Validators.required],
     nickName: ['', Validators.required],
     birthday: ['', Validators.required],
@@ -50,6 +46,7 @@ export class AddPlayerComponent implements OnInit {
     this.playerService.postPlayerData(formdata)
       .subscribe(player => {
         this.playersdata.push(player);
+        alert("data will be post");
       });
 
   }

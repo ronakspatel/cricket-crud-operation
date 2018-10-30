@@ -13,6 +13,26 @@ export class InMemoryDataService implements InMemoryDbService {
                 Age: 45,
                 fatherName:' Ramesh Tendulkar',
                 motherName: ' Rajni Tendulkar'
+            },
+            {
+                Id:2,
+                playerName: 'Virat Kohli',
+                nickName: ' Cheeku',
+                birthday: '1988-11-05',
+                nationality: 'India',
+                Age:  29,
+                fatherName:' Prem Kohli',
+                motherName: ' Saroj Kohli'
+            },
+            {
+                Id:3,
+                playerName: 'Virat Kohli',
+                nickName: ' Cheeku',
+                birthday: '1988-11-05',
+                nationality: 'India',
+                Age:  29,
+                fatherName:' Prem Kohli',
+                motherName: ' Saroj Kohli'
             }
 
         ];
