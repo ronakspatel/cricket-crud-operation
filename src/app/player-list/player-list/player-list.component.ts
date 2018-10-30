@@ -31,6 +31,6 @@ export class PlayerListComponent implements OnInit {
     
   }
   editPlayer(player:CricketPlayerModel){
-
+    
   }
 }
