@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PlayerService } from '../../core/Player.service';
 import { CricketPlayerModel } from '../../cricket-player.model';
-import { Logs } from 'selenium-webdriver';
+
 
 @Component({
   selector: 'app-player-list',
@@ -29,5 +29,8 @@ export class PlayerListComponent implements OnInit {
     this.playerService.deletePlayer(player).subscribe();
     console.log(player);
     
+  }
+  editPlayer(player:CricketPlayerModel){
+
   }
 }
